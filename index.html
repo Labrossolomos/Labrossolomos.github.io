@@ -145,7 +145,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-1.png" alt="alternative">
+                                        <img class="img-responsive" src="images/UN-of-NIC-Horizontal-162x31.png" alt="alternative">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -246,16 +246,23 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>Issuing a PDF</h2>
-                        <p> 
-                            <b>1.</b> Calculate the hash of the PDF, or a batch of PDF.<br>
-                            <b>2.</b> Create a new transaction which include the hash and anchor it to the next block available on blockchain. <br>
-                            <b>3.</b> Takes the transaction ID of this block and update the metadata of the PDF with this information and an expiration date (if is given one). The new PDF is the one that is tamper proof. </p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
+                        <ol> 
+                            <li>
+                                <div class="media-body">Calculate the hash of the PDF, or a batch of PDF.</div>
+                            </li> 
+                            <li>
+                                <div class="media-body">Create a new transaction which include the hash and anchor it to the next block available on blockchain.</div>
+                            </li>
+                            <li>
+                                <div class="media-body">Takes the transaction ID of this block and update the metadata of the PDF with this information and an expiration date (if is given one). The new PDF is the one that is tamper proof.</div>
+                            </li>  
+                        </ol>
+                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/image13011.png" alt="alternative">
+                        <img class="img-fluid VPDF-img" src="images/image13011.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -270,21 +277,23 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/flowRoot119.png" alt="alternative">
+                        <img class="img-fluid VPDF-img" src="images/flowRoot119.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>Revoke a PDF</h2>
-                        <ol class="list-unstyled li-space-lg">
-                            <li >Calculate the hash of the original PDF or of the whole batch.</li>
-                            <li>Create another transaction with the same hash, after chain it with a revokation code. Anchors the transaction to a new block on blockchain.</li>
-                            <li class="media">
-                                <i class="fas fa-check"></i>
+                        <ol>
+                            <li >
+                                <div class="media-body">Calculate the hash of the original PDF or of the whole batch.</div>
+                            </li>
+                            <li>
+                                <div class="media-body">Create another transaction with the same hash, after chain it with a revokation code. Anchors the transaction to a new block on blockchain.</div></li>
+                            <li>
                                 <div class="media-body">From now on the specific PDF or each PDF of a batch, will recognized as revoked from the validator. </div>
                             </li>
                         </ol>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
+                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -292,21 +301,60 @@
     </div> <!-- end of basic-2 -->
     <!-- end of details 2 -->
 
-    <!-- Details Lightboxes -->
-    <!-- Details Lightbox 1 -->
-	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+
+
+    <div class="basic-2">
         <div class="container">
             <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
+                <!-- <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox-1.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
+                        <img class="img-fluid VPDF-img" src="images/flowRoot119.png" alt="alternative">
+                    </div>  end of image-container -->
+                <!-- </div> end of col --> 
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Validate a PDF</h2>
+                        <ol>
+                            <li >
+                                <div class="media-body">Extract the hash of a given PDF</div>
+                            </li>
+                            <li>
+                                <div class="media-body">Search for this hash in the whole blockchain by “asking” a Bitcoin node. </div>
+                                </li>
+                            <li>
+                                <div class="media-body">Replies if the given PDF is Valid Revoked or Expired (in case that an expiration date is given) </div>
+                            </li>
+                        </ol>
+                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
+                    </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>Design And Plan</h3>
-                    <hr>
-                    <h5>Core feature</h5>
+                <div class = "col-lg-6">
+                    <div class="text-container">
+                        <div class="VPDF-dropzone">
+                            <blockco-validator organization="Block.co"></blockco-validator>
+                        </div>
+                        <script src="https://static.block.co/blockco-validator.js"></script>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div>
+
+    <!-- Details Lightboxes -->
+    <!-- Details Lightbox 1 -->
+	<!-- <div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="row"> -->
+                <!-- <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button> -->
+                <!-- <div class="col-lg-8"> -->
+                    <!-- <div class="image-container"> -->
+                        <!-- <img class="img-fluid" src="images/details-lightbox-1.svg" alt="alternative"> -->
+                    <!-- </div> end of image-container -->
+                <!-- </div> end of col -->
+                <!-- <div class="col-lg-4"> -->
+                    <!-- <h3>Design And Plan</h3> -->
+                    <!-- <hr> -->
+                    <!-- <h5>Core feature</h5>
                     <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
                     <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
                     <ul class="list-unstyled li-space-lg">
@@ -329,11 +377,11 @@
                             <i class="fas fa-check"></i><div class="media-body">Fast email checking</div>
                         </li>
                     </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a> -->
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+        <!-- </div> end of container -->
+    <!-- </div> end of lightbox-basic -->
     <!-- end of details lightbox 1 -->
 
     <!-- Details Lightbox 2 -->

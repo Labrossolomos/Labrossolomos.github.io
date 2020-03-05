@@ -44,6 +44,18 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+
+/* VPDF image class */
+.VPDF-img {
+	margin-top: 105px;
+}
+
+.VPDF-dropzone {
+    cursor: pointer;
+    border: 3px dashed #2d2c30;
+    
+}
+
 body,
 html {
     width: 100%;
@@ -754,7 +766,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background-color: #fff;
+	background-color: rgb(212, 221, 233);
 }
 
 .header .header-content {
