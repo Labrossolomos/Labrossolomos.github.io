@@ -45,17 +45,6 @@ Colors:
 /*     01. General Styles     */
 /******************************/
 
-/* VPDF image class */
-.VPDF-img {
-	margin-top: 105px;
-}
-
-.VPDF-dropzone {
-    cursor: pointer;
-    border: 3px dashed #2d2c30;
-    
-}
-
 body,
 html {
     width: 100%;
@@ -2194,3 +2183,55 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+/* VPDF style */
+.VPDF-img {
+	margin-top: 105px;
+}
+
+.VPDF-dropzone {
+    cursor: pointer;
+    border: 3px dashed #2d2c30;
+    
+}
+
+.cards-1 .VPDF-border {
+	border: 1px solid #343a40;
+}
+
+.VPDF-btn {
+	display: inline;
+	border-radius: 2rem;
+	margin-right: 20px;
+}
+
+
+.git-img-btn {
+	display: inline;
+	border-radius: 2rem;
+	margin-right: 20px;
+	background-color: #3b4a4c;
+	border-color: #3b4a4c;
+}
+
+
+.git-img-size {
+	font-size: 2em;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+.pdf-img-size {
+	font-size:60px;
+	margin-left: 18px;
+	padding-top: 4px;	
+}
+
+.pdf-img-description {
+	margin-left: 18px;
+	padding-right: 60px;
+	padding-top: 4px;	
+	text-align: left;
+	position: relative;
+}
+/* ****************** *
