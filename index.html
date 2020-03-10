@@ -303,10 +303,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Issuing a PDF</h2>
+                        <h2>Issuing a batch PDF</h2>
                         <ol> 
                             <li>
-                                <div class="media-body">Calculate the fingerpint of the PDF, or a batch of PDF.</div>
+                                <div class="media-body">Calculate the fingerpint of the batch of PDFs using the <a href="https://en.wikipedia.org/wiki/Merkle_tree">Merkle tree</a>.</div>
                             </li> 
                             <li>
                                 <div class="media-body">Create a new transaction which include the fingerpint and anchor it to the next block available on blockchain.</div>
@@ -315,12 +315,13 @@
                                 <div class="media-body">Takes the transaction ID of this block and update the metadata of the PDF with this information and an expiration date (if is given one). The new PDF is the one that is tamper proof.</div>
                             </li>  
                         </ol>
+                        <p>(You can also issue a single PDF in the same way.)</p>
                         <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid VPDF-img" src="images/image13011.png" alt="alternative">
+                        <img class="img-fluid VPDF-img" src="images/issue.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -343,7 +344,7 @@
                         <h2>Revoke a PDF</h2>
                         <ol>
                             <li >
-                                <div class="media-body">Calculate the fingerpint of the original PDF or of the whole batch.</div>
+                                <div class="media-body">Calculate the fingerpint of the original PDF.</div>
                             </li>
                             <li>
                                 <div class="media-body">Create another transaction with the same fingerpint, after chain it with a revocation code. Anchors the transaction to a new block on blockchain.</div></li>
@@ -351,6 +352,7 @@
                                 <div class="media-body">From now on the specific PDF or each PDF of a batch, will recognized as revoked from the validator. </div>
                             </li>
                         </ol>
+                        <p><u>Notice</u> that, there is also the possibility to revoke the whole batch of PDFs that issued before.</p>
                         <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -364,17 +366,13 @@
     <div class="basic-2">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid VPDF-img" src="images/flowRoot119.png" alt="alternative">
-                    </div>  end of image-container -->
-                <!-- </div> end of col --> 
+                
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>Validate a PDF</h2>
                         <ol>
                             <li >
-                                <div class="media-body">Extract the fingerpint of a given PDF</div>
+                                <div class="media-body">Calculate the fingerpint of a given PDF</div>
                             </li>
                             <li>
                                 <div class="media-body">Search for this fingerpint in the whole blockchain by “asking” a Bitcoin node. </div>
@@ -386,7 +384,12 @@
                         <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                
+                <!-- validator img -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid VPDF-img" src="images/validator.png" alt="alternative">
+                    </div>  <!--  end of image-container -->
+                </div>  <!-- end of col  -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div>
