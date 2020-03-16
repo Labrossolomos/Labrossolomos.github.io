@@ -65,7 +65,10 @@
                     <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#services">Services</a>
+                    <a class="nav-link page-scroll" href="#services">Design Principles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#How it works">How it works</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link page-scroll" href="#pricing">Pricing</a>
@@ -90,9 +93,9 @@
                 </li> -->
             </ul>
             <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fab fa-github-alt"></i>
+                <span >
+                    <a href="https://github.com/verifiable-pdfs">
+                        <i class="fab fa-github git-img-nav">GitHub</i> 
                     </a>
                 </span>
                 <!-- <span class="fa-stack">
@@ -115,9 +118,11 @@
                     <div class="col-lg-6">
                         <div class="text-container">
                             <h1><span class="turquoise">VPDF</span> <br>Verifiable PDFs</h1>
-                            <p class="p-large">is an open source project to validate the authenticity of a PDF file and the data it includes, using the immutability and security of the Bitcoin blockchain.</p>
+                            <p class="p-over-btn">is an open source project to validate the authenticity
+                                of a PDF file and the data it includes leveraging the 
+                                immutability and security of the Bitcoin blockchain.</p>
                             <a class="btn-solid-lg page-scroll VPDF-btn" href="#services">DISCOVER</a>
-                            <a class="btn-solid-lg page-scroll git-img-btn" href="https://github.com/verifiable-pdfs">
+                            <a class="btn-solid-lg page-scroll git-img-btn" href="https://github.com/verifiable-pdfs" target="blank">
                                     <i class="fab fa-github git-img-size "></i> GitHub
                             </a>
                         </div> <!-- end of text-container -->
@@ -133,139 +138,85 @@
     </header> <!-- end of header -->
     <!-- end of header -->
 
-
-    <!-- Customers -->
-    <div class="slider-1">
+    <!-- VALIDATOR -->
+    <div id="validator" class="cards-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5>Trusted By</h5>
-                    
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/UN-of-NIC-Horizontal-162x31.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/horizontal_logo_162x31.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-2.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-3.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-4.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-6.png" alt="alternative">
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-wrapper -->
-                        </div> <!-- end of swiper container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of customers -->
-
-    <!-- VALIDATOR -->
-    <div id="validator" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Validator</h2>
-                        <p>Our validator is also an open source project which can be hosted in each issuer's website. 
-                            With the validator you can check the validity of VPDF. It's usage is very simple and easy, you just have to 
-                            drag'n'drop (or by clicking in the drag'n'drop zone to select from yourdevice) the pdf you want to check it's validity
-                            and the validator will respond in a few seconds if the VPDF is valid, revoked or expired in a past date.</p>
-                        <p>Below you can find three different VPDFs that you can download them and check their validity by drop them to the validator
-                            area on the right side.
-                        </p>
-                        <div class="row">
-                            <a href="example files/1-John_Smith.pdf" target="blank" download="1-John_Smith.pdf">
-                                <div class="image-container">
-                                    <i class="fas fa-file-pdf pdf-img-size"></i>
-                                        <div class="pdf-img-description">
-                                            <p>Valid PDF</p>
-                                        </div>
-                                </div>
-                            </a>
-                            <a href="example files/2-Mary_Johnson.pdf" target="blank" download="2-Mary_Johnson.pdf">
-                                <div class="image-container">
-                                    <i class="fas fa-file-pdf pdf-img-size"></i>
-                                    <div class="pdf-img-description">
-                                        <p>Revoked PDF</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="example files/3-Miranda_Wood.pdf" target="blank" download="3-Miranda_Wood.pdf">
-                                <div class="image-container">
-                                    <i class="fas fa-file-pdf pdf-img-size"></i>
-                                    <div class="pdf-img-description">
-                                        <p>Expired PDF</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Validator -->
-                <div class = "col-lg-6">
-                    <div class="text-container">
-                        <div class="VPDF-dropzone">
-                            <blockco-validator organization="Block.co"></blockco-validator>
-                        </div>
-                        <script src="https://static.block.co/blockco-validator.js"></script>
-                    </div>
+                    <h2>Validator</h2>
+                    <p>Just upload a Verifiable PDF to the online validator and check if the document is the original or was tampered with in seconds.
+                        The validator is open source so anyone can host one. Moreover, any one is capable of verifying all VPDFs irrespective of who issued them.
+                    </p>
+                    <p>
+                        You can test right now using the three sample VPDFs provided.
+                    </p>
                 </div>
             </div>
+            
+            <div class = "col-lg-12">
+                <div class="text-container">
+                    <div class="VPDF-dropzone">
+                        <blockco-validator organization="Block.co"></blockco-validator>
+                    </div>
+                    <script src="https://static.block.co/blockco-validator.js"></script>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card VPDF-card">    
+                    <a href="example files/1-John_Smith.pdf" target="blank" download="1-John_Smith.pdf">
+                        <i class="fas fa-file-pdf pdf-img-size"></i>
+                        <div class="card-body">
+                            <p class="card-title">Valid PDF</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card VPDF-card">    
+                    <a href="example files/2-Mary_Johnson.pdf" target="blank" download="2-Mary_Johnson.pdf">
+                        
+                            <i class="fas fa-file-pdf pdf-img-size"></i>
+                            <div class="card-body">
+                                <p class="card-title">Revoked PDF</p>
+                            </div>
+                        
+                    </a>
+                </div>
+
+
+                <div class="card VPDF-card">    
+                    <a href="example files/3-Miranda_Wood.pdf" target="blank" download="3-Miranda_Wood.pdf">
+                        
+                            <i class="fas fa-file-pdf pdf-img-size"></i>
+                            <div class="card-body">
+                                <p class="card-title">Expired PDF</p>
+                            </div>
+                        
+                    </a>
+                </div>
+            </div>
+        
+            
+            <!-- </div> -->
         </div>
     </div>
     <!-- end of validator -->
 
-
     <!-- Services -->
     <div id="services" class="cards-1">
         <div class="container">
+            <div class="col-lg-12">
+                <h2>Design Principles</h2>
+                <!-- <p class="p-heading p-large">We serve small and medium sized companies in all tech related industries with high quality growth services which are presented below</p> -->
+            </div> <!-- end of col -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Product Features </h2>
-                    <!-- <p class="p-heading p-large">We serve small and medium sized companies in all tech related industries with high quality growth services which are presented below</p> -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
                     <!-- Card -->
                     <div class="card VPDF-border">
                         <img class="card-image" src="images/blockchain.jpg" alt="alternative">
                         <div class="card-body">
-                            <h4 class="card-title">Issue a PDF</h4>
-                            <p>Anchors the fingerpint of a pdf (or batch of pdfs) on blockchain.<br><br></p>
+                            <h4 class="card-title">Decentralized</h4>
+                            <p>PDF documents can be verified on any validator by consulting the Bitcoin blockchain. Issuers can host a validator on their website, if they wish.<br><br></p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -274,8 +225,8 @@
                     <div class="card VPDF-border">
                         <img class="card-image" src="images/VPDF_revoked_200x200.png" alt="alternative">
                         <div class="card-body">
-                            <h4 class="card-title">Revoke a pdf</h4>
-                            <p>There is the ability to revoke a pdf or the whole batch<br><br></p>
+                            <h4 class="card-title">Unforgeable</h4>
+                            <p>Any kind tampering of the PDF will immediately invalidate it as it will change the digital fingerprint that was anchored in the blockchain.<br><br></p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -284,8 +235,18 @@
                     <div class="card VPDF-border">
                         <img class="card-image" src="images/VPDF_VALID_200x200.png" alt="alternative">
                         <div class="card-body">
-                            <h4 class="card-title">Validate a pdf</h4>
-                            <p>You can check the authenticity of a pdf, by simply drag’n’drop the pdf file inside the validator. </p>
+                            <h4 class="card-title">Simplicity</h4>
+                            <p>Straight-forward process using the most-widely used medium of exchange for documents. PDFs are already the de facto document format.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card VPDF-border">
+                        <img class="card-image" src="images/VPDF_VALID_200x200.png" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">Open</h4>
+                            <p>Following Bitcoin’s example we wanted our solution to be open and permissionless. The core library, which includes all the functionality, is open source and anyone can use it to issue, revoke and validate credentials.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -298,100 +259,103 @@
 
 
     <!-- Details 1 -->
-    <div class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Issuing a batch PDF</h2>
-                        <ol> 
-                            <li>
-                                <div class="media-body">Calculate the fingerpint of the batch of PDFs using the <a href="https://en.wikipedia.org/wiki/Merkle_tree">Merkle tree</a>.</div>
-                            </li> 
-                            <li>
-                                <div class="media-body">Create a new transaction which include the fingerpint and anchor it to the next block available on blockchain.</div>
-                            </li>
-                            <li>
-                                <div class="media-body">Takes the transaction ID of this block and update the metadata of the PDF with this information and an expiration date (if is given one). The new PDF is the one that is tamper proof.</div>
-                            </li>  
-                        </ol>
-                        <p>(You can also issue a single PDF in the same way.)</p>
-                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid VPDF-img" src="images/issue.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of details 1 -->
-
-    
-    <!-- Details 2 -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid VPDF-img" src="images/flowRoot119.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Revoke a PDF</h2>
-                        <ol>
-                            <li >
-                                <div class="media-body">Calculate the fingerpint of the original PDF.</div>
-                            </li>
-                            <li>
-                                <div class="media-body">Create another transaction with the same fingerpint, after chain it with a revocation code. Anchors the transaction to a new block on blockchain.</div></li>
-                            <li>
-                                <div class="media-body">From now on the specific PDF or each PDF of a batch, will recognized as revoked from the validator. </div>
-                            </li>
-                        </ol>
-                        <p><u>Notice</u> that, there is also the possibility to revoke the whole batch of PDFs that issued before.</p>
-                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of details 2 -->
-
-
-
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Validate a PDF</h2>
-                        <ol>
-                            <li >
-                                <div class="media-body">Calculate the fingerpint of a given PDF</div>
-                            </li>
-                            <li>
-                                <div class="media-body">Search for this fingerpint in the whole blockchain by “asking” a Bitcoin node. </div>
+    <div id="How it works">
+        <div class="cards-1 col-lg-12">
+            <h1>How it works</h1>
+        </div>
+        <div class="basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h2>Issuing PDFs</h2>
+                            <ol> 
+                                <li>
+                                    <div class="media-body">Calculate the digital fingerprint of one or more PDFs using a <a href="https://en.wikipedia.org/wiki/Merkle_tree">Merkle tree</a>.</div>
+                                </li> 
+                                <li>
+                                    <div class="media-body">The fingerprint is anchored into the blockchain by including it in a transaction.</div>
                                 </li>
-                            <li>
-                                <div class="media-body">Replies if the given PDF is Valid Revoked or Expired (in case that an expiration date is given) </div>
-                            </li>
-                        </ol>
-                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <!-- validator img -->
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid VPDF-img" src="images/validator.png" alt="alternative">
-                    </div>  <!--  end of image-container -->
-                </div>  <!-- end of col  -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                                <li>
+                                    <div class="media-body">The transaction ID and the respective Merkle proof is added into the PDF metadata. This new PDF (vPDF) is now provably tamperproof.</div>
+                                </li>  
+                            </ol>
+                            <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a> -->
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid VPDF-img" src="images/issue.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+        <!-- end of details 1 -->
+
+        
+        <!-- Details 2 -->
+        <div class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid VPDF-img" src="images/flowRoot119.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h2>Revoke a vPDF</h2>
+                            <ol>
+                                <li >
+                                    <div class="media-body">Calculate the fingerprint of the original PDF.</div>
+                                </li>
+                                <li>
+                                    <div class="media-body">Anchor this fingerprint into the blockchain by including it in a transaction marking it as a revocation</div></li>
+                                <li>
+                                    <div class="media-body">From now on this vPDF will be considered revoked (invalid). This can apply to multiple PDFs at once.</div>
+                                </li>
+                            </ol>
+                            <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-2 -->
+        <!-- end of details 2 -->
+
+
+
+        <div class="basic-2">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h2>Validate a vPDF</h2>
+                            <ol>
+                                <li >
+                                    <div class="media-body">Calculate the fingerpint of the PDF</div>
+                                </li>
+                                <li>
+                                    <div class="media-body">Consult if this fingerprint exists in the blockchain by using the proof in the metadata.</div>
+                                    </li>
+                                <li>
+                                    <div class="media-body">Replies if the given vPDF is Valid, Revoked or Expired as well as some identification proof for the issuer.</div>
+                                </li>
+                            </ol>
+                            <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <!-- validator img -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid VPDF-img" src="images/validator.png" alt="alternative">
+                        </div>  <!--  end of image-container -->
+                    </div>  <!-- end of col  -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div>
     </div>
 
     <!-- Details Lightboxes -->
@@ -506,3 +470,105 @@
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
+
+   <!-- Customers -->
+    <!-- <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>Trusted By</h5> -->
+                    
+                    <!-- Image Slider -->
+                    <!-- <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/UN-of-NIC-Horizontal-162x31.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/horizontal_logo_162x31.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-2.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-3.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-4.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-6.png" alt="alternative">
+                                    </div>
+                                </div> -->
+                            <!--</div>  end of swiper-wrapper -->
+                        <!--</div>  end of swiper container -->
+                    <!--</div>  end of slider-container -->
+             <!--        end of image slider -->
+
+                <!--</div>  end of col -->
+            <!--</div>  end of row -->
+        <!--</div>  end of container -->
+    <!--</div>  end of slider-1 -->
+    <!--end of customers-->
+
+
+    <!-- Card -->
+    <!-- <div class="card VPDF-border">
+        <img class="card-image" src="images/blockchain.jpg" alt="alternative">
+        <div class="card-body">
+            <h4 class="card-title">Issue a PDF</h4>
+            <p>Anchors the fingerpint of a pdf (or batch of pdfs) on blockchain.<br><br></p>
+        </div>
+    </div> -->
+    <!-- end of card -->
+
+    <!-- Card -->
+    <!-- <div class="card VPDF-border">
+        <img class="card-image" src="images/VPDF_revoked_200x200.png" alt="alternative">
+        <div class="card-body">
+            <h4 class="card-title">Revoke a pdf</h4>
+            <p>There is the ability to revoke a pdf or the whole batch<br><br></p>
+        </div>
+    </div> -->
+    <!-- end of card -->
+
+    <!-- Card -->
+    <!-- <div class="card VPDF-border">
+        <img class="card-image" src="images/VPDF_VALID_200x200.png" alt="alternative">
+        <div class="card-body">
+            <h4 class="card-title">Validate a pdf</h4>
+            <p>You can check the authenticity of a pdf, by simply drag’n’drop the pdf file inside the validator. </p>
+        </div>
+    </div> -->
+    <!-- end of card -->
+
+    
+    <!-- Why we use Bitcoin blockchain -->
+    <!-- <div class="basic-1">
+        <div class="container">
+            <div class="text-container">
+                <h2> Why Bitcoin blockchain?</h2>
+                <ul class="VPDF-ulist-style">
+                    <li><h3>Blockchain benefits</h3></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
