@@ -45,7 +45,7 @@
     
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" >
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
@@ -70,6 +70,11 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#How it works">How it works</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="https://github.com/verifiable-pdfs">
+                        <i class="fab fa-github git-img-nav nav-item"></i> GitHub 
+                    </a>
+                </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link page-scroll" href="#pricing">Pricing</a>
                 </li>
@@ -92,19 +97,19 @@
                     <a class="nav-link page-scroll" href="#contact">Contact</a>
                 </li> -->
             </ul>
-            <span class="nav-item social-icons">
+            <!-- <span class="nav-item social-icons">
                 <span >
                     <a href="https://github.com/verifiable-pdfs">
                         <i class="fab fa-github git-img-nav">GitHub</i> 
                     </a>
                 </span>
-                <!-- <span class="fa-stack">
+                <span class="fa-stack">
                     <a href="#your-link">
                         <i class="fas fa-circle fa-stack-2x twitter"></i>
                         <i class="fab fa-twitter fa-stack-1x"></i>
                     </a>
                 </span> -->
-            </span>
+            <!-- </span> -->
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
@@ -121,7 +126,7 @@
                             <p class="p-over-btn">is an open source project to validate the authenticity
                                 of a PDF file and the data it includes leveraging the 
                                 immutability and security of the Bitcoin blockchain.</p>
-                            <a class="btn-solid-lg page-scroll VPDF-btn" href="#services">DISCOVER</a>
+                            <a class="btn-solid-lg page-scroll VPDF-btn" href="#How it works">How it works</a>
                             <a class="btn-solid-lg page-scroll git-img-btn" href="https://github.com/verifiable-pdfs" target="blank">
                                     <i class="fab fa-github git-img-size "></i> GitHub
                             </a>
@@ -139,7 +144,7 @@
     <!-- end of header -->
 
     <!-- VALIDATOR -->
-    <div id="validator" class="cards-1">
+    <div id="validator" class="cards-1 layer-color">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -213,10 +218,10 @@
                 <div class="col-lg-12">
                     <!-- Card -->
                     <div class="card VPDF-border">
-                        <img class="card-image" src="images/blockchain.jpg" alt="alternative">
+                        <img class="card-image" src="images/decentralized-system.png" alt="alternative">
                         <div class="card-body">
                             <h4 class="card-title">Decentralized</h4>
-                            <p>PDF documents can be verified on any validator by consulting the Bitcoin blockchain. Issuers can host a validator on their website, if they wish.<br><br></p>
+                            <p>PDF documents can be verified on any validator by consulting the Bitcoin blockchain. Issuers can host a validator on their website, if they wish.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -226,7 +231,7 @@
                         <img class="card-image" src="images/VPDF_revoked_200x200.png" alt="alternative">
                         <div class="card-body">
                             <h4 class="card-title">Unforgeable</h4>
-                            <p>Any kind tampering of the PDF will immediately invalidate it as it will change the digital fingerprint that was anchored in the blockchain.<br><br></p>
+                            <p>Any kind tampering of the PDF will immediately invalidate it as it will change the digital fingerprint that was anchored in the blockchain.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -259,11 +264,11 @@
 
 
     <!-- Details 1 -->
-    <div id="How it works">
-        <div class="cards-1 col-lg-12">
+    <div id="How it works" class="layer-color">
+        <div class="cards-1 col-lg-12" style="padding-bottom: 0%;">
             <h1>How it works</h1>
         </div>
-        <div class="basic-1">
+        <div class="basic-1"  style="padding-top: 0%;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -285,7 +290,8 @@
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid VPDF-img" src="images/issue.png" alt="alternative">
+                            <br><br>
+                            <img class="img-fluid VPDF-img" src="images/Issue.png" alt="alternative">
                         </div> <!-- end of image-container -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -300,7 +306,8 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid VPDF-img" src="images/flowRoot119.png" alt="alternative">
+                            <br><br>
+                            <img class="img-fluid VPDF-img" src="images/Revoke.png" alt="alternative">
                         </div> <!-- end of image-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
@@ -335,13 +342,13 @@
                             <h2>Validate a vPDF</h2>
                             <ol>
                                 <li >
-                                    <div class="media-body">Calculate the fingerpint of the PDF</div>
+                                    <div class="media-body">Extract the proof and calculate the fingerpint of the PDF.</div>
                                 </li>
                                 <li>
-                                    <div class="media-body">Consult if this fingerprint exists in the blockchain by using the proof in the metadata.</div>
+                                    <div class="media-body">Check that the fingerprint is in the blockchain by using the proof.</div>
                                     </li>
                                 <li>
-                                    <div class="media-body">Replies if the given vPDF is Valid, Revoked or Expired as well as some identification proof for the issuer.</div>
+                                    <div class="media-body">Replies if the given vPDF is Valid, Revoked or Expired, according to the blockchain, as well as identification proof for the issuer.</div>
                                 </li>
                             </ol>
                             <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
@@ -349,7 +356,7 @@
                     </div> <!-- end of col -->
                     <!-- validator img -->
                     <div class="col-lg-6">
-                        <div class="image-container">
+                        <div class="image-container"><br>
                             <img class="img-fluid VPDF-img" src="images/validator.png" alt="alternative">
                         </div>  <!--  end of image-container -->
                     </div>  <!-- end of col  -->

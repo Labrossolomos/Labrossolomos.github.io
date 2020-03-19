@@ -2268,6 +2268,17 @@ body li,
 	padding-bottom:15px;
 }
 
+.layer-color {
+	background-color:#d4dde9;
+}
 
+.navbar-custom.top-nav-collapse {
+	background-color:#e9ecef;
+}
+
+.cards-1 .card-image {
+	max-width: 96px;
+	max-height: 96px;
+}
 
 /* ****************** *
