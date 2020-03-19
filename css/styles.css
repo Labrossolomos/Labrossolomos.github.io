@@ -2197,6 +2197,7 @@ a:hover.back-to-top {
 
 .cards-1 .VPDF-border {
 	border: 1px solid #343a40;
+	min-height: 375px;
 }
 
 .VPDF-btn {
